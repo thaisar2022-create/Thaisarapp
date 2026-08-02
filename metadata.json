@@ -1,0 +1,6 @@
+{
+  "name": "Sawasdee Thai",
+  "description": "Thai language learning application for Myanmar learners featuring interactive courses, video lessons, vocabulary flashcards, practice quizzes, and student progress tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

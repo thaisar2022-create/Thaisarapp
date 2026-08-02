@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-surface: #0d0e14;
+    --surface-container-low: #12131b;
+    --surface-container: #181922;
+    --surface-container-high: #1e1f29;
+    --surface-container-highest: #242531;
+    --surface-bright: #2a2b38;
+    --primary: #d8b9ff;
+    --primary-container: #6c2eb6;
+    --on-primary: #5812a2;
+    --on-primary-container: #eedcff;
+    --secondary: #c0c8c8;
+    --emerald-free: #059669;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Padauk', sans-serif;
+    background-color: #0d0e14;
+    color: #e5e4f5;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glass card effects */
+.glass-card {
+  background: rgba(24, 25, 34, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.free-accent-gradient {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #6c2eb6 0%, #a855f7 100%);
+}
+
+@keyframes progress-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.progress-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: progress-shimmer 2s infinite;
+}
+
